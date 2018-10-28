@@ -1,3 +1,3 @@
-# vue-plugins-playground
+# vue-timers
 
-Clean initial project for experimenting with plugins.
+Vue plugin for easy timers management inside components.

@@ -6,11 +6,6 @@ const DEFAULT_OPTIONS = {
    running: true,
 };
 
-function getTimerMethodName(timerName) {
-   const timerNameCapitalized = timerName[0].toUpperCase() + timerName.substr(1);
-   return `onTimer${timerNameCapitalized}`;
-}
-
 export default {
    install(Vue, options = {}) {
       Vue.config.optionMergeStrategies.timers = Vue.config.optionMergeStrategies.computed;
@@ -32,7 +27,7 @@ export default {
 
                const tickTimer = () => {
                   showDebug(`Timer '${timer.id}' tick`);
-                  const methodName = getTimerMethodName(key);
+                  const methodName = `onTimer${key[0].toUpperCase() + key.substr(1)}`;
                   if (this[methodName]) this[methodName]();
                   if (timerDefinition.onTick) timerDefinition.onTick.apply(this);
                   if (timerDefinition.events) this.$emit(`timer-${key}`);

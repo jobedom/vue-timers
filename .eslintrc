@@ -1,0 +1,37 @@
+{
+   "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+   },
+   "plugins": ["html", "vue"],
+   "parser": "babel-eslint",
+   "parserOptions": {
+      "ecmaFeatures": {
+         "jsx": false,
+         "experimentalObjectRestSpread": true
+      },
+      "sourceType": "module"
+   },
+   "extends": ["eslint:recommended"],
+   "globals": {},
+   "rules": {
+      "indent": ["error", 3],
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"],
+      "no-cond-assign": ["error", "always"],
+      "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+      "no-debugger": "warn",
+      "no-const-assign": "error",
+      "no-this-before-super": "error",
+      "no-undef": "warn",
+      "no-unreachable": "warn",
+      "no-unused-vars": "warn",
+      "constructor-super": "warn",
+      "valid-typeof": "warn",
+      "max-len": ["error", { "code": 120 }]
+   }
+}

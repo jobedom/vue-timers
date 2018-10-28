@@ -1,0 +1,14 @@
+{
+"files.exclude": {
+    ".cache": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "dist": true,
+    "node_modules": true
+},
+   "editor.formatOnSave": true,
+   "npm-scripts.showStartNotification": false
+}

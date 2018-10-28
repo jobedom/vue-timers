@@ -1,0 +1,17 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "Python",
+         "type": "pythonExperimental",
+         "request": "launch",
+         "module": "flask",
+         "env": {
+            "PYTHONPATH": "/Users/jobedom/.virtualenvs/baara/lib/python3.6/site-packages",
+            "FLASK_APP": "${workspaceFolder}/server/main.py"
+         },
+         "args": ["run", "--no-debugger", "--no-reload"],
+         "jinja": true
+      }
+   ]
+}
